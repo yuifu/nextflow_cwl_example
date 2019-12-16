@@ -1,4 +1,4 @@
-# NextflowからCWLで書かれたワークフローを呼び出す
+# NextflowからCWLで書かれたワークフローを呼び出す
 2019/12/17
 
 この記事は[Workflow Advent Calendar 2019](https://qiita.com/advent-calendar/2019/workflow)の17日目の記事です。
