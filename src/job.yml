@@ -1,0 +1,5 @@
+run_ids:  # array of type "string"
+  - SRR8452726
+  - SRR8452727
+repo: "ebi"  # default value of type "string". (optional)
+nthreads: 2  # default value of type "int". (optional)
