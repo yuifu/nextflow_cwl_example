@@ -178,7 +178,8 @@ process kallisto_se {
 }
 ```
 
-Nextflowでは設定をconfigに書くこともできる`job.config`:
+Nextflowでは設定をconfigに書くこともできる（`job.config`）:
+
 ```
 params{
 	list_run_ids = "list_run_ids.csv"
