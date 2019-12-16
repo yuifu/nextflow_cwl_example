@@ -3,7 +3,7 @@
 
 この記事は[Workflow Advent Calendar 2019](https://qiita.com/advent-calendar/2019/workflow)の17日目の記事です。
 
-[@yuifu](https://twitter.com/yuifu) です。大学で[バイオインフォマティクスの研究室](https://sites.google.com/view/ozakilab-jp)を主宰しており、普段は転写因子やRNA結合タンパク質の結合データ、シングルセルRNA-seqデータ、空間トランスクリプトームデータの解析やそのための解析手法開発の研究をしています。
+[@yuifu](https://twitter.com/yuifu) です。大学で[バイオインフォマティクスの研究室](https://sites.google.com/view/ozakilab-jp)を主宰しており、普段は転写因子やRNA結合タンパク質の結合データ、シングルセルRNA-seqデータ、空間トランスクリプトームデータの解析やそのための解析手法開発の研究をしています。
 
 なお、この記事は[23th Workflow Meetup
 ](https://github.com/manabuishii/workflow-meetup/wiki/20191216)の時間内に書かれたものです。主催者や参加者の方々にこの場を借りて感謝申し上げます。
@@ -71,7 +71,7 @@ docker -v /var/run/docker.sock:/var/run/docker.sock -v /tmp:/tmp -v "$PWD":"$PWD
 2. [pfastq-dump](https://github.com/inutano/pfastq-dump)でSRAファイルをFASTQファイル（`.fastq`）に変換する
 3. [kallisto](https://pachterlab.github.io/kallisto/) で遺伝子発現量を定量する
 
-このうち、1〜２については、既に[pitagora-network/pitagora-cwl](https://github.com/pitagora-network/pitagora-cwl)から[SRA（Short Read Archive）からSRAファイルをダウンロードしてFASTQファイルに変換するCWLワークフロー](https://github.com/pitagora-network/pitagora-cwl/tree/master/workflows/download-fastq)が公開されている。ので、これを使いたい。
+このうち、1〜２については、既に[pitagora-network/pitagora-cwl](https://github.com/pitagora-network/pitagora-cwl)から[SRA（Short Read Archive）からSRAファイルをダウンロードしてFASTQファイルに変換するCWLワークフロー](https://github.com/pitagora-network/pitagora-cwl/tree/master/workflows/download-fastq)が公開されている。ので、これを使いたい。
 
 ### CWLで書かれたワークフローをNextflowから呼び出す
 
