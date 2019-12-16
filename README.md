@@ -1,7 +1,7 @@
 # NextflowからCWLで書かれたワークフローを呼び出す
 2019/12/17
 
-この記事は[Workflow Advent Calendar 2019](https://qiita.com/advent-calendar/2019/workflow)の17日目の記事です。
+この記事は[Workflow Advent Calendar 2019](https://qiita.com/advent-calendar/2019/workflow)の17日目の記事です。コードは[GitHubレポジトリ](https://github.com/yuifu/nextflow_cwl_example)に置いてあります。
 
 [@yuifu](https://twitter.com/yuifu) です。大学で[バイオインフォマティクスの研究室](https://sites.google.com/view/ozakilab-jp)を主宰しており、普段は転写因子やRNA結合タンパク質の結合データ、シングルセルRNA-seqデータ、空間トランスクリプトームデータの解析やそのための解析手法開発の研究をしています。
 
