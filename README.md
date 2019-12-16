@@ -59,7 +59,7 @@ cwltool [tool-or-workflow-description] [input-job-settings]
 なお、cwltool特有の事情により、このDockerイメージを実行する際には、以下のような[実行オプションが必要となる](https://hub.docker.com/r/commonworkflowlanguage/cwltool/)。
 
 ```
-docker -v /var/run/docker.sock:/var/run/docker.sock -v /tmp:/tmp -v "$PWD":"$PWD" -w="$PWD" commonworkflowlanguage/cwltool "$@"
+docker run -v /var/run/docker.sock:/var/run/docker.sock -v /tmp:/tmp -v "$PWD":"$PWD" -w="$PWD" commonworkflowlanguage/cwltool "$@"
 ```
 
 ## 例：SRAからFASTQファイルを落とし、kallistoで遺伝子発現量を定量する
