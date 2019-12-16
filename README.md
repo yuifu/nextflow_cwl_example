@@ -8,7 +8,7 @@
 なお、この記事は[23th Workflow Meetup
 ](https://github.com/manabuishii/workflow-meetup/wiki/20191216)の時間内に書かれたものです。主催者や参加者の方々にこの場を借りて感謝申し上げます。
 
-# 導入
+# ワークフロー記述言語、CWL、Nextflow
 ## ワークフロー記述言語について
 
 [研究の再現性の確保は喫緊の課題である](https://www.nature.com/news/1-500-scientists-lift-the-lid-on-reproducibility-1.19970)。研究におけるバイオインフォマティクス・データ解析の比重が増加している昨今では、バイオインフォマティクス・データ解析の再現性の確保が不可欠である。実際、バイオインフォマティクスの専門性の不足から誤った結論に至ることがある（例えば、[RNAエディティング研究](https://www.nature.com/news/rna-editing-study-under-intense-scrutiny-1.10217)、[構造生物学研究](http://science.sciencemag.org/content/314/5807/1856.full)、[進化生物学研究](https://www.pnas.org/content/113/18/5053)での論文取り下げや修正が落ちている）。
@@ -36,7 +36,6 @@ CWLはML型のワークフロー記述言語であり、パイプラインを記
 Nextflowは、DSL型のワークフロー記述言語＋ワークフロー実行系である。GroovyをベースとしたDSLであり、条件分岐、ループ、複雑なオプションの組み合わせ、リソース管理など柔軟な操作が可能である。Nextflowで書かれたバイオインフォマティクスパイプラインのレポジトリである[nf-core](https://nf-co.re/)などワークフローを共有するためのプラットフォームも整備されつつある。
 
 そのようなNextflowであるが、実はCWLとの連携が困難である。実際、Nextflowは[2017年のブログポストを最後に](https://www.nextflow.io/blog/2017/nextflow-and-cwl.html)CWLと連携を諦めてしまっている。そのため、現状、NextflowはCWLの夢見るエコシステムから切り離された状態にある。
-
 
 # NextflowでCWLで書かれたワークフローを呼び出す
 
@@ -246,11 +245,8 @@ kallisto/
 ```
 
 
-
-
 # まとめ
 
-CWLで書かれたワークフローをNextflowから半ば無理やり呼び出すことができた。
-Nextflowを使っている人が、サクッとCWLで書かれたワークフローを使うのに便利かもしれない。
+CWLで書かれたワークフローをNextflowから半ば無理やり呼び出すことができた。Nextflowを使っている人が、サクッとCWLで書かれたワークフローを使うのに便利かもしれない。
 
-問題
+解決していない問題点として、DockerやSingularityなどの実行するコンテナシステムの指定、スレッド数やメモリなどの計算リソースの割り当ての指定が（筆者がCWLに疎いこともあり）陽にはしづらいことが挙げられる。この問題はCWLつよつよ人材の方にコメントしていただけるとこを期待している。
